@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.viewPager.setAdapter(new FragmentsAdapter(getSupportFragmentManager()));
         binding.tabLayout.setupWithViewPager(binding.viewPager);
+        //check
     }
 
     @Override
