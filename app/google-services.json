@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "13620340978",
+    "project_id": "ko-net-aeb28",
+    "storage_bucket": "ko-net-aeb28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13620340978:android:f3a1a485834715b4a0c86b",
+        "android_client_info": {
+          "package_name": "com.example.ko_net"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13620340978-h27hpo65hei2pqpgqljvbs5orojc4tog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBdozXfFuH3jIiNTVxDkUD4qgYXFxWPMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13620340978-h27hpo65hei2pqpgqljvbs5orojc4tog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

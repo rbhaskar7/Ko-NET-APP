@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".SignInActivity"
     android:background="@color/black"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="9dp"
-    tools:context=".SIGNUP">
+    android:padding="9dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,20 +26,6 @@
             android:layout_height="200dp"
             android:contentDescription="TODO"
             app:srcCompat="@drawable/ko_net_logo" />
-
-        <EditText
-            android:id="@+id/etUserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:background="@color/header"
-            android:ems="10"
-            android:hint="Username"
-            android:inputType="textPersonName"
-            android:padding="15dp"
-            android:textColor="@color/teal_200"
-            android:textColorHint="@color/teal_700" />
 
         <EditText
             android:id="@+id/etEmail"
@@ -67,27 +53,27 @@
             android:textColorHint="@color/teal_700" />
 
         <TextView
-            android:id="@+id/tvAlreadyAccount"
+            android:id="@+id/tvClickSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:gravity="center"
             android:padding="5dp"
-            android:text="Already have an account? Sign In"
+            android:text="Don't have an account? Sign Up"
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/btn_signUp"
+            android:id="@+id/btn_signIn"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:padding="12dp"
-            android:text="Sign up"
+            android:text="Sign in"
             app:backgroundTint="@color/teal_700"
             app:cornerRadius="30dp" />
 
         <Button
-            android:id="@+id/btn_google"
+            android:id="@+id/btnGoogle"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -99,4 +85,5 @@
             app:cornerRadius="30dp" />
 
     </LinearLayout>
+
 </LinearLayout>
