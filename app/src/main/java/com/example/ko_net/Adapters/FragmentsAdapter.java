@@ -19,12 +19,11 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0: new ChatsFragment();
-            case 1: new StatusFragment();
-            case 2: new CallsFragment();
-            default: new ChatsFragment();
+            case 0: return new ChatsFragment();
+            case 1: return new StatusFragment();
+            case 2: return new CallsFragment();
+            default: return new ChatsFragment();
         }
-        return null;
     }
 
     @Override
@@ -46,6 +45,6 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
             title = "CALLS";
         }
 
-        return super.getPageTitle(position);
+        return title;
     }
 }
