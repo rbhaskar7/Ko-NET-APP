@@ -6,9 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.ko_net.Fragments.CallsFragment;
 import com.example.ko_net.Fragments.ChatsFragment;
-import com.example.ko_net.Fragments.StatusFragment;
 
 public class FragmentsAdapter extends FragmentPagerAdapter {
     public FragmentsAdapter(@NonNull FragmentManager fm) {
@@ -18,17 +16,12 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        switch (position) {
-            case 0: return new ChatsFragment();
-            case 1: return new StatusFragment();
-            case 2: return new CallsFragment();
-            default: return new ChatsFragment();
-        }
+        return new ChatsFragment();
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 1;
     }
 
     @Nullable
@@ -36,15 +29,8 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         String title = null;
         if(position == 0) {
-            title = "CHATS";
+            title = "     INITIATE TALK-PROCESS     ";
         }
-        if(position == 1) {
-            title = "STATUS";
-        }
-        if(position == 2) {
-            title = "CALLS";
-        }
-
         return title;
     }
 }

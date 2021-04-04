@@ -1,15 +1,32 @@
 package com.example.ko_net.Models;
 
 public class Users {
-    String profilePic, username, mail, password, userId, lastMessage;
+    String profilePic, username, mail, password, userId, lastMessage, bio;
 
-    public Users(String profilePic, String username, String mail, String password, String userId, String lastMessage) {
+    public Users(String profilePic, String username, String mail, String password, String userId, String lastMessage, String bio) {
         this.profilePic = profilePic;
         this.username = username;
         this.mail = mail;
         this.password = password;
         this.userId = userId;
         this.lastMessage = lastMessage;
+        this.bio = bio;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public Users(){}
@@ -51,14 +68,6 @@ public class Users {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
     }
 
     public String getLastMessage() {

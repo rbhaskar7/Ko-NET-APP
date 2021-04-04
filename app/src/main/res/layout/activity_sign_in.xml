@@ -32,25 +32,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:background="@color/header"
+            android:background="@drawable/entry_box_up_corner"
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
-            android:padding="15dp"
-            android:textColor="@color/teal_200"
-            android:textColorHint="@color/teal_700" />
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/header"
+            android:textColorHint="@color/header" />
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/header"
+            android:background="@drawable/entry_box_down_corner"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="15dp"
-            android:textColor="@color/teal_200"
-            android:textColorHint="@color/teal_700" />
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/header"
+            android:textColorHint="@color/header" />
 
         <TextView
             android:id="@+id/tvClickSignUp"
@@ -59,6 +65,7 @@
             android:layout_gravity="right"
             android:gravity="center"
             android:padding="5dp"
+            android:layout_marginTop="10dp"
             android:text="Don't have an account? Sign Up"
             android:textColor="@color/white" />
 

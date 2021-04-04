@@ -58,6 +58,14 @@ public class SignInActivity extends AppCompatActivity {
         binding.btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (binding.etEmail.getText().toString().isEmpty()) {
+                    binding.etEmail.setError("Enter a valid Email");
+                    return;
+                }
+                if (binding.etPassword.getText().toString().isEmpty()) {
+                    binding.etPassword.setError("Enter a valid Password");
+                    return;
+                }
                 progressDialog.show();
                 auth.signInWithEmailAndPassword(binding.etEmail.getText().toString(), binding.etPassword.getText().toString())
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -65,6 +73,8 @@ public class SignInActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressDialog.dismiss();
                                 if(task.isSuccessful()) {
+                                    finish();
+                                    Toast.makeText(SignInActivity.this, "Signed In Successfully", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                                     startActivity(intent);
                                 }
@@ -141,7 +151,7 @@ public class SignInActivity extends AppCompatActivity {
 
                             Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                             startActivity(intent);
-                            Toast.makeText(SignInActivity.this, "Sign in with Google", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignInActivity.this, "Signed In Successfully", Toast.LENGTH_SHORT).show();
                             // updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
